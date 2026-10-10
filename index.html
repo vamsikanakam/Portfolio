@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WICS | Maruti Suzuki Case Study</title>
+<style>
+:root{--bg:#f6f7f9;--ink:#101318;--muted:#66707d;--line:#dfe3e8;--card:#fff;--soft:#eef1f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+nav{position:fixed;top:0;left:0;right:0;height:58px;background:rgba(246,247,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10;display:flex;align-items:center;justify-content:center;gap:6px;overflow:auto}
+nav a{font-size:12px;color:var(--muted);text-decoration:none;padding:7px 9px;border-radius:999px;white-space:nowrap}nav a:hover{background:var(--soft);color:var(--ink)}
+main{max-width:1180px;margin:auto;padding:78px 22px 60px}section{min-height:92vh;padding:42px 0;display:flex;align-items:center}.panel{width:100%;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:50px;box-shadow:0 12px 40px rgba(16,19,24,.05)}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:750}.eyebrow{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:18px 0 24px;max-width:900px}h2{font-size:clamp(30px,4vw,52px);line-height:1.03;letter-spacing:-.04em;margin:10px 0 26px}h3{font-size:17px;margin:0 0 8px}p{max-width:900px;color:#414b57}.lead{font-size:20px;color:#3f4853;max-width:820px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff}.metric{font-size:35px;font-weight:750;letter-spacing:-.04em;margin:5px 0}.label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.flow span{background:var(--soft);border-radius:999px;padding:9px 13px;font-size:13px}
+.timeline{display:grid;grid-template-columns:100px 1fr;gap:18px;margin-top:25px}.day{font-weight:800}.bar{border-left:2px solid var(--line);padding-left:20px;padding-bottom:24px}.bar strong{display:block;margin-bottom:5px}
+.quote{font-size:25px;line-height:1.25;letter-spacing:-.02em;border-left:3px solid var(--ink);padding-left:20px;margin:30px 0}.note{font-size:13px;color:var(--muted)}
+.footer{padding:40px 0;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:800px){nav{justify-content:flex-start;padding:0 8px}.panel{padding:30px 22px;border-radius:20px}.grid,.grid2{grid-template-columns:1fr}.timeline{grid-template-columns:70px 1fr}section{min-height:auto;padding:28px 0}h1{font-size:48px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#top">Overview</a><a href="#s1">01 Problem</a><a href="#s2">02 Decision</a><a href="#s3">03 Product</a><a href="#s4">04 Build</a><a href="#s5">05 Iterate</a><a href="#s6">06 Economics</a><a href="#s7">07 Ownership & Takeaway</a>
+</nav>
+<main id="top">
+
+<section><div class="panel">
+<span class="eyebrow">Maruti Suzuki · WICS Case Study</span>
+<h1>From weld data to real-time production control.</h1>
+<p class="lead">Shaped and implemented a Weld Information Collection System to improve weld traceability, in-house QC control and real-time production response on a high-volume automotive production line.</p>
+<div class="flow"><span>30-day production-line implementation</span><span>140 robots connected</span><span>Product Management + Project Leadership</span></div>
+<div class="grid">
+<div class="card"><div class="label">Line efficiency</div><div class="metric">86% → 97%</div><p>Improved line efficiency</p></div>
+<div class="card"><div class="label">Market complaint backtracking</div><div class="metric">45 min → 1:45 min</div><p>Reduced time to backtrack weld-related market complaints</p></div>
+<div class="card"><div class="label">Payback period</div><div class="metric">~2.2 Months</div><p>Estimated investment payback</p></div>
+</div>
+<div class="card" style="margin-top:16px"><div class="label">In-house QC control</div><div class="metric">100%</div><p>All weld spots monitored and traceable</p></div>
+</div></section>
+
+<section id="s1"><div class="panel">
+<div class="kicker">01 / Finding the Right Problem</div><h2>Three production problems shared one missing capability: reliable weld information.</h2>
+<p>A typical weld body contained roughly 3,000 spots. Investigation depended on manual inspection records and cross-referencing production information, making investigation and response time-consuming.</p>
+<div class="grid">
+<div class="card"><div class="label">Traceability</div><div class="metric">45 min</div><p>Average time required to backtrack a weld-related market complaint.</p></div>
+<div class="card"><div class="label">Real-time response</div><div class="metric">Time-consuming</div><p>Line efficiency monitoring existed through PCS and GOT, but detecting a fault, reaching the relevant GOT system, analysing the situation, verifying robot parameters and taking corrective action required operator/supervisor intervention.</p></div>
+<div class="card"><div class="label">Spot monitoring</div><div class="metric">~3,000</div><p>Weld spots per body made 100% manual spot checking impractical.</p></div>
+</div>
+</div></section>
+
+<section id="s2"><div class="panel">
+<div class="kicker">02 / Solution Decision</div><h2>From production pain points to a solution that could address the full job.</h2>
+<p>The Production Staff were the primary users. The solution decision connected their day-to-day jobs and pain points to the gains WICS needed to create.</p>
+<div class="grid2">
+<div class="card"><h3>Customer side · Production Staff</h3>
+<p><strong>Jobs to be Done</strong><br>Monitor weld production → identify faults → investigate weld parameters → trace historical weld data → take countermeasure.</p>
+<p><strong>Pain Points</strong><br>Manual traceability; fragmented data across Robots, PCS and MOS; time-consuming fault investigation; incomplete weld-spot QC.</p>
+<p><strong>Gain Points</strong><br>Faster complaint backtracking; real-time fault visibility; 100% weld-spot monitoring; faster countermeasure.</p></div>
+<div class="card"><h3>WICS value creation</h3>
+<p><strong>Pain Relievers</strong><br>Centralized weld information; automated capture of weld parameters; historical traceability; real-time fault information.</p>
+<p><strong>Gain Creators</strong><br>Faster investigation; faster countermeasure; complete weld-spot visibility; improved production response.</p>
+<p><strong>Product / Service</strong><br>Customized WICS solution integrated with the existing production environment.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Why WICS?</h3><p>A single information layer could address traceability, 100% weld-spot monitoring and faster production response within the one-month implementation constraint.</p></div>
+</div></section>
+
+<section id="s3"><div class="panel">
+<div class="kicker">03 / Product Definition · Five Planes</div><h2>The existing WICS platform became the base. The product work was defining how it needed to work for Maruti's production users.</h2>
+<div class="grid2">
+<div class="card"><h3>01 · Strategy — Why?</h3><p><strong>Goal:</strong> Improve weld traceability, real-time fault response and 100% weld-spot monitoring.</p><p><strong>Method:</strong> Translate production problems into focused information and workflows that supervisors and operators could use to detect, investigate and counter faults with minimal time loss.</p></div>
+<div class="card"><h3>02 · Scope — What?</h3><p>Define what the system needed to capture, monitor and make actionable: weld parameters for every spot; robot and weld-body information; fault and downtime information; shift/date/time tracking; MOS-linked spot information; Spot-0 Status; historical traceability; and countermeasure/parameter-change tracking.</p></div>
+<div class="card"><h3>03 · Structure — How is information organised?</h3><p>Structure information so users could move from production line → sub-assembly → robot → weld body → weld spot and access corresponding parameters and fault information.</p><p>MOS integration enabled users to identify where a spot was applied, which sub-assembly it belonged to and which robot performed it.</p></div>
+<div class="card"><h3>04 · Skeleton — How does the user navigate?</h3><p>Define navigation around the investigation workflow: select line/sub-assembly → shift/date/time → robots and weld bodies → individual weld information → faults → parameters and countermeasure actions.</p><p>DAP/design review with the Japanese team validated the proposed structure and interactions before manufacturing.</p></div>
+<div class="card"><h3>05 · Surface — What does the user see?</h3><p>Customize the WICS interface so required production information could be presented clearly through dashboard, monitoring views, navigation hierarchy and information states defined for the Maruti use case.</p><p class="note"></p></div>
+</div>
+</div></section>
+
+<section id="s4"><div class="panel">
+<div class="kicker">04 / Build</div><h2>Thirty days. A live production line. A tightly sequenced implementation.</h2>
+<div class="timeline">
+<div class="day">Days<br>1–10</div><div class="bar"><strong>Problem and feasibility analysis → Project charter → Technical specifications freezing & approval → Stakeholder communication → Negotiation → Fast-track PO approvals</strong><p>Requirements and feasibility were worked through in parallel so the project charter could establish scope, goals, success/exit criteria, stakeholders, budget, schedule and strategy.</p></div>
+<div class="day">Days<br>11–20</div><div class="bar"><strong>DAP + Equipment manufacturing supervision + Site readiness</strong><p>Built a wireframe prototype to visualize the proposed production workflow, gather production-team feedback and translate validated requirements into vendor design inputs before the DAP.</p><p>While customized equipment was manufactured and shipped from Japan, I supervised site readiness with Civil/Utilities, covering safety requirements, permissions, updated layouts, feasibility and validation of planned changes against actual running-shop conditions.</p><p>DAP/design mockup reviews with the Japanese team were used to validate customization before manufacturing.</p></div>
+<div class="day">Days<br>21–30</div><div class="bar"><strong>Installation, Trials, PPVT (Peak Production Volume Trial), Stabilization & Commissioning the line</strong><p>Component inspection → WICS installation and robot connectivity → Power-on & I/O checks → Weld-body trials → Fault identification → Countermeasure → Validate → Improve.</p><p>The focus was not simply getting the system live, but progressively improving reliability through trial feedback and production-team inputs.</p></div>
+</div>
+</div></section>
+
+<section id="s5"><div class="panel">
+<div class="kicker">05 / Cross-functional Iteration</div>
+<h2>When WICS exposed the production issue, I drove the investigation to the root cause.</h2>
+<div class="flow"><span>Production issue</span><span>WICS detection & traceability</span><span>Management escalation + approval</span><span>PFMEA-based prioritization</span><span>QA</span><span>Root cause</span><span>15-day action plan</span><span>Closure</span></div>
+<div class="grid2">
+<div class="card"><h3>What I owned</h3>
+<p><strong>Escalated</strong> the production and efficiency impact to management and secured approval to act.</p>
+<p><strong>Prioritized</strong> issues using criticality, frequency and risk through a PFMEA-based approach.</p>
+<p><strong>Mobilized</strong> In-house QA and Vendor QA to identify and address root causes.</p>
+<p><strong>Defined</strong> a 15-day corrective-action plan with roles, responsibilities and timelines.</p>
+<p><strong>Drove execution to closure</strong> while protecting running-body accuracy.</p></div>
+<div class="card"><h3>Root-cause example</h3>
+<p><strong>WICS exposed a recurring production issue.</strong></p>
+<p>Investigation traced the issue to a <strong>datum-hole mismatch between two parts</strong>, creating a gap during fitment and affecting welding conditions.</p>
+<p>Before WICS, the production issue was not being diagnosed effectively because welding parameters were not being finalized robustly against actual part variation. WICS made the issue visible and traceable; the subsequent QA investigation identified the underlying part-fitment issue.</p></div>
+</div>
+
+</div></section>
+
+<section id="s7"><div class="panel">
+<div class="kicker">07 / Ownership & Takeaway</div>
+<h2>Product Management + Project Leadership</h2>
+<div class="grid2">
+<div class="card"><h3>Product Management</h3><p>Problem definition · Alternative evaluation · JTBD · Requirements & specifications · Wireframing · Solution customization · Information architecture & workflow · DAP/design validation · Production feedback & iteration</p></div>
+<div class="card"><h3>Project Leadership</h3><p>30-day execution constraint · Parallel workstreams · Dependency management · Supplier & stakeholder coordination · Production risk management · QA / Vendor QA collaboration · Installation · Trials · PPVT · Stabilization & commissioning</p></div>
+</div>
+
+<p class="lead" style="margin-top:22px">WICS was a single project. The case demonstrates product thinking and project-leadership capabilities across problem discovery, solution evaluation, requirements definition, UI/UX customization, cross-functional implementation, iterative validation and measurable operational impact.</p>
+<div class="flow"><span>Problem discovery</span><span>Solution evaluation</span><span>Requirements</span><span>UI/UX customization</span><span>Execution</span><span>Validation</span><span>Operational impact</span><span>Stakeholder Management</span><span>Critical Path Management</span><span>Value Stream Analysis</span></div>
+</div></section>
+
+<div class="footer">WICS Case Study · Maruti Suzuki · Product Management + Project Leadership</div>
+</main>
+</body>
+</html>
