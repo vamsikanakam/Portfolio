@@ -22,7 +22,7 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:
 </head>
 <body>
 <nav>
-<a href="#top">Overview</a><a href="#s1">01 Problem</a><a href="#s2">02 Decision</a><a href="#s3">03 Product</a><a href="#s4">04 Build</a><a href="#s5">05 Iterate</a><a href="#s6">06 Economics</a><a href="#s7">07 Ownership & Takeaway</a>
+<a href="#top">Overview</a><a href="#s1">01 Problem</a><a href="#s2">02 Decision</a><a href="#s3">03 Product</a><a href="#s4">04 Build</a><a href="#s5">05 Iterate</a><a href="#s7">06 Ownership & Takeaway</a>
 </nav>
 <main id="top">
 
@@ -34,9 +34,9 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:
 <div class="grid">
 <div class="card"><div class="label">Line efficiency</div><div class="metric">86% → 97%</div><p>Improved line efficiency</p></div>
 <div class="card"><div class="label">Market complaint backtracking</div><div class="metric">45 min → 1:45 min</div><p>Reduced time to backtrack weld-related market complaints</p></div>
-<div class="card"><div class="label">Payback period</div><div class="metric">~2.2 Months</div><p>Estimated investment payback</p></div>
+<div class="card"><div class="label">Payback period</div><div class="metric">~2.5 Months</div><p>Estimated investment payback</p></div>
 </div>
-<div class="card" style="margin-top:16px"><div class="label">In-house QC control</div><div class="metric">100%</div><p>All weld spots monitored and traceable</p></div>
+<div class="card" style="margin-top:16px"><div class="label">In-house QC control</div><div class="metric">100%</div><p>All Weld spots are Monitored, Controlled &amp; are Traceable 100%</p></div>
 </div></section>
 
 <section id="s1"><div class="panel">
@@ -54,9 +54,9 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:
 <p>The Production Staff were the primary users. The solution decision connected their day-to-day jobs and pain points to the gains WICS needed to create.</p>
 <div class="grid2">
 <div class="card"><h3>Customer side · Production Staff</h3>
-<p><strong>Jobs to be Done</strong><br>Monitor weld production → identify faults → investigate weld parameters → trace historical weld data → take countermeasure.</p>
 <p><strong>Pain Points</strong><br>Manual traceability; fragmented data across Robots, PCS and MOS; time-consuming fault investigation; incomplete weld-spot QC.</p>
-<p><strong>Gain Points</strong><br>Faster complaint backtracking; real-time fault visibility; 100% weld-spot monitoring; faster countermeasure.</p></div>
+<p><strong>Gain Points</strong><br>Faster complaint backtracking; real-time fault visibility; 100% weld-spot monitoring; faster countermeasure.</p>
+<p><strong>Jobs to be Done (JTBD)</strong><br>Monitor weld production → identify faults → investigate weld parameters → trace historical weld data → take countermeasure.</p></div>
 <div class="card"><h3>WICS value creation</h3>
 <p><strong>Pain Relievers</strong><br>Centralized weld information; automated capture of weld parameters; historical traceability; real-time fault information.</p>
 <p><strong>Gain Creators</strong><br>Faster investigation; faster countermeasure; complete weld-spot visibility; improved production response.</p>
@@ -66,12 +66,12 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:
 </div></section>
 
 <section id="s3"><div class="panel">
-<div class="kicker">03 / Product Definition · Five Planes</div><h2>The existing WICS platform became the base. The product work was defining how it needed to work for Maruti's production users.</h2>
+<div class="kicker">03 / Product Definition · Five Planes</div><h2>Implemented 5S framework from a UX perspective to bridge the Gap between Business Strategy &amp; Actual Visual Design</h2>
 <div class="grid2">
 <div class="card"><h3>01 · Strategy — Why?</h3><p><strong>Goal:</strong> Improve weld traceability, real-time fault response and 100% weld-spot monitoring.</p><p><strong>Method:</strong> Translate production problems into focused information and workflows that supervisors and operators could use to detect, investigate and counter faults with minimal time loss.</p></div>
 <div class="card"><h3>02 · Scope — What?</h3><p>Define what the system needed to capture, monitor and make actionable: weld parameters for every spot; robot and weld-body information; fault and downtime information; shift/date/time tracking; MOS-linked spot information; Spot-0 Status; historical traceability; and countermeasure/parameter-change tracking.</p></div>
 <div class="card"><h3>03 · Structure — How is information organised?</h3><p>Structure information so users could move from production line → sub-assembly → robot → weld body → weld spot and access corresponding parameters and fault information.</p><p>MOS integration enabled users to identify where a spot was applied, which sub-assembly it belonged to and which robot performed it.</p></div>
-<div class="card"><h3>04 · Skeleton — How does the user navigate?</h3><p>Define navigation around the investigation workflow: select line/sub-assembly → shift/date/time → robots and weld bodies → individual weld information → faults → parameters and countermeasure actions.</p><p>DAP/design review with the Japanese team validated the proposed structure and interactions before manufacturing.</p></div>
+<div class="card"><h3>04 · Skeleton — How does the user navigate?</h3><p>Define navigation around the investigation workflow: select line/sub-assembly → shift/date/time → robots and weld bodies → individual weld information → faults → parameters and countermeasure actions.</p><p>DAP/design review with Vendors validated the proposed structure and interactions before manufacturing.</p></div>
 <div class="card"><h3>05 · Surface — What does the user see?</h3><p>Customize the WICS interface so required production information could be presented clearly through dashboard, monitoring views, navigation hierarchy and information states defined for the Maruti use case.</p><p class="note"></p></div>
 </div>
 </div></section>
@@ -79,40 +79,41 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:
 <section id="s4"><div class="panel">
 <div class="kicker">04 / Build</div><h2>Thirty days. A live production line. A tightly sequenced implementation.</h2>
 <div class="timeline">
-<div class="day">Days<br>1–10</div><div class="bar"><strong>Problem and feasibility analysis → Project charter → Technical specifications freezing & approval → Stakeholder communication → Negotiation → Fast-track PO approvals</strong><p>Requirements and feasibility were worked through in parallel so the project charter could establish scope, goals, success/exit criteria, stakeholders, budget, schedule and strategy.</p></div>
-<div class="day">Days<br>11–20</div><div class="bar"><strong>DAP + Equipment manufacturing supervision + Site readiness</strong><p>Built a wireframe prototype to visualize the proposed production workflow, gather production-team feedback and translate validated requirements into vendor design inputs before the DAP.</p><p>While customized equipment was manufactured and shipped from Japan, I supervised site readiness with Civil/Utilities, covering safety requirements, permissions, updated layouts, feasibility and validation of planned changes against actual running-shop conditions.</p><p>DAP/design mockup reviews with the Japanese team were used to validate customization before manufacturing.</p></div>
-<div class="day">Days<br>21–30</div><div class="bar"><strong>Installation, Trials, PPVT (Peak Production Volume Trial), Stabilization & Commissioning the line</strong><p>Component inspection → WICS installation and robot connectivity → Power-on & I/O checks → Weld-body trials → Fault identification → Countermeasure → Validate → Improve.</p><p>The focus was not simply getting the system live, but progressively improving reliability through trial feedback and production-team inputs.</p></div>
+<div class="day">Days<br>1–10</div><div class="bar"><strong>Problem and feasibility analysis → Project charter → Technical specifications freezing & approval → Stakeholder communication → Negotiation → Fast-track PO approvals</strong><p>Requirements and feasibility were worked through in parallel so the project charter could establish scope, goals, success/exit criteria, stakeholders, budget, schedule and strategy. Stakeholder communication through Power/Interest Grid &amp; Daily Standups so there is a tailored communication &amp; Continuous visibility &amp; 2 way communication into the projects progress. Fast track PO’s through Concurrent approvals.</p></div>
+<div class="day">Days<br>11–20</div><div class="bar"><strong>DAP + Equipment manufacturing supervision + Site readiness</strong><p>Built a wireframe prototype to visualize the proposed production workflow, gather production-team feedback and translate validated requirements into vendor design inputs before the DAP.</p><p>While customized equipment was manufactured and shipped from Japan, I supervised site readiness with Civil/Utilities, covering safety requirements, permissions, updated layouts, feasibility and validation of planned changes against actual running-shop conditions.</p><p>DAP/design mockup reviews with Vendors were used to validate customization before manufacturing.</p></div>
+<div class="day">Days<br>21–30</div><div class="bar"><strong>Installation, Trials, PPVT (Peak Production Volume Trial), Stabilization & Commissioning the line</strong><p>Component inspection → WICS installation and robot connectivity → Safety Checks → Weld-body trials → Fault identification → Countermeasure → Validate → Improve.</p><p>The focus was not simply getting the system live, but progressively improving reliability through trial feedback and production-team inputs.</p></div>
 </div>
 </div></section>
 
 <section id="s5"><div class="panel">
 <div class="kicker">05 / Cross-functional Iteration</div>
-<h2>When WICS exposed the production issue, I drove the investigation to the root cause.</h2>
-<div class="flow"><span>Production issue</span><span>WICS detection & traceability</span><span>Management escalation + approval</span><span>PFMEA-based prioritization</span><span>QA</span><span>Root cause</span><span>15-day action plan</span><span>Closure</span></div>
+<h2>When WICS exposed the symptom, I drove the investigation to the root cause.</h2>
+<div class="flow"><span>Production issue</span><span>WICS detection &amp; traceability</span><span>Management escalation + approval</span><span>PFMEA-based prioritization</span><span>QA</span><span>Root cause</span><span>15-day action plan</span><span>Closure</span></div>
+<p><strong>Symptom:</strong> A recurring weld-related production issue was flagged by WICS. The underlying cause was not yet known and required investigation.</p>
 <div class="grid2">
+<div class="card"><h3>Root-cause example</h3>
+<p><strong>WICS exposed a recurring high-resistance fault.</strong></p>
+<p>Investigation traced the issue to a <strong>datum-hole mismatch between two parts</strong>, creating a gap during fitment and affecting welding conditions.</p>
+<p>Before WICS, the robot fault was not being diagnosed effectively because welding parameters were not being finalized robustly against actual part variation. WICS made the fault visible and traceable; the subsequent QA/vendor investigation identified the underlying part-fitment issue.</p></div>
 <div class="card"><h3>What I owned</h3>
 <p><strong>Escalated</strong> the production and efficiency impact to management and secured approval to act.</p>
 <p><strong>Prioritized</strong> issues using criticality, frequency and risk through a PFMEA-based approach.</p>
 <p><strong>Mobilized</strong> In-house QA and Vendor QA to identify and address root causes.</p>
 <p><strong>Defined</strong> a 15-day corrective-action plan with roles, responsibilities and timelines.</p>
 <p><strong>Drove execution to closure</strong> while protecting running-body accuracy.</p></div>
-<div class="card"><h3>Root-cause example</h3>
-<p><strong>WICS exposed a recurring production issue.</strong></p>
-<p>Investigation traced the issue to a <strong>datum-hole mismatch between two parts</strong>, creating a gap during fitment and affecting welding conditions.</p>
-<p>Before WICS, the production issue was not being diagnosed effectively because welding parameters were not being finalized robustly against actual part variation. WICS made the issue visible and traceable; the subsequent QA investigation identified the underlying part-fitment issue.</p></div>
 </div>
 
 </div></section>
 
 <section id="s7"><div class="panel">
-<div class="kicker">07 / Ownership & Takeaway</div>
+<div class="kicker">06 / Ownership & Takeaway</div>
 <h2>Product Management + Project Leadership</h2>
 <div class="grid2">
 <div class="card"><h3>Product Management</h3><p>Problem definition · Alternative evaluation · JTBD · Requirements & specifications · Wireframing · Solution customization · Information architecture & workflow · DAP/design validation · Production feedback & iteration</p></div>
-<div class="card"><h3>Project Leadership</h3><p>30-day execution constraint · Parallel workstreams · Dependency management · Supplier & stakeholder coordination · Production risk management · QA / Vendor QA collaboration · Installation · Trials · PPVT · Stabilization & commissioning</p></div>
+<div class="card"><h3>Project Leadership</h3><p>30-day execution constraint · Parallel workstreams · Dependency management · Supplier & stakeholder coordination · Production risk management · In-house QA / Vendor QA collaboration · Installation · Trials · PPVT · Stabilization & commissioning</p></div>
 </div>
 
-<p class="lead" style="margin-top:22px">WICS was a single project. The case demonstrates product thinking and project-leadership capabilities across problem discovery, solution evaluation, requirements definition, UI/UX customization, cross-functional implementation, iterative validation and measurable operational impact.</p>
+<p class="lead" style="margin-top:22px">This case study demonstrates my product thinking and project-leadership capabilities across problem discovery, solution evaluation, requirements definition, UI/UX customization, cross-functional implementation, iterative validation and measurable operational impact.</p>
 <div class="flow"><span>Problem discovery</span><span>Solution evaluation</span><span>Requirements</span><span>UI/UX customization</span><span>Execution</span><span>Validation</span><span>Operational impact</span><span>Stakeholder Management</span><span>Critical Path Management</span><span>Value Stream Analysis</span></div>
 </div></section>
 
