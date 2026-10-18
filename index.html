@@ -3,121 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WICS | Maruti Suzuki Case Study</title>
+<meta name="description" content="Selected product management, program delivery and operational improvement case studies.">
+<title>Portfolio | Product Management &amp; Program Delivery</title>
 <style>
-:root{--bg:#f6f7f9;--ink:#101318;--muted:#66707d;--line:#dfe3e8;--card:#fff;--soft:#eef1f4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
-nav{position:fixed;top:0;left:0;right:0;height:58px;background:rgba(246,247,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10;display:flex;align-items:center;justify-content:center;gap:6px;overflow:auto}
-nav a{font-size:12px;color:var(--muted);text-decoration:none;padding:7px 9px;border-radius:999px;white-space:nowrap}nav a:hover{background:var(--soft);color:var(--ink)}
-main{max-width:1180px;margin:auto;padding:78px 22px 60px}section{min-height:92vh;padding:42px 0;display:flex;align-items:center}.panel{width:100%;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:50px;box-shadow:0 12px 40px rgba(16,19,24,.05)}
-.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:750}.eyebrow{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
-h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:18px 0 24px;max-width:900px}h2{font-size:clamp(30px,4vw,52px);line-height:1.03;letter-spacing:-.04em;margin:10px 0 26px}h3{font-size:17px;margin:0 0 8px}p{max-width:900px;color:#414b57}.lead{font-size:20px;color:#3f4853;max-width:820px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff}.metric{font-size:35px;font-weight:750;letter-spacing:-.04em;margin:5px 0}.label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
-.flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.flow span{background:var(--soft);border-radius:999px;padding:9px 13px;font-size:13px}
-.timeline{display:grid;grid-template-columns:100px 1fr;gap:18px;margin-top:25px}.day{font-weight:800}.bar{border-left:2px solid var(--line);padding-left:20px;padding-bottom:24px}.bar strong{display:block;margin-bottom:5px}
-.quote{font-size:25px;line-height:1.25;letter-spacing:-.02em;border-left:3px solid var(--ink);padding-left:20px;margin:30px 0}.note{font-size:13px;color:var(--muted)}
-.footer{padding:40px 0;color:var(--muted);font-size:13px;text-align:center}
-@media(max-width:800px){nav{justify-content:flex-start;padding:0 8px}.panel{padding:30px 22px;border-radius:20px}.grid,.grid2{grid-template-columns:1fr}.timeline{grid-template-columns:70px 1fr}section{min-height:auto;padding:28px 0}h1{font-size:48px}}
+:root{--bg:#f7f8fa;--paper:#fff;--ink:#18212b;--muted:#687483;--line:#e1e6ec;--accent:#235c51;--accent2:#dcebe5;--soft:#eef2f5;--shadow:0 18px 50px rgba(22,35,45,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit} .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(247,248,250,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(225,230,236,.9)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.04em;text-decoration:none;font-size:19px}.brand span{color:var(--accent)}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--accent)}.navlinks .contact-link{padding:10px 15px;border:1px solid var(--line);border-radius:999px;color:var(--ink)}
+.hero{padding:94px 0 82px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:60px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:2px;background:var(--accent)}h1{font-size:clamp(42px,6.5vw,76px);line-height:1.02;letter-spacing:-.065em;margin:22px 0 24px;max-width:760px}h1 em{font-style:normal;color:var(--accent)}.intro{font-size:18px;line-height:1.8;color:#566271;max-width:660px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:9px;text-decoration:none;font-size:13px;font-weight:750;border:1px solid var(--line)}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}.btn.secondary{background:white}.hero-side{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center}.orbit{width:min(330px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid #cbdcd5;background:radial-gradient(circle at 50% 45%,#fff 0,#edf4f0 48%,#e3eee8 100%);display:flex;align-items:center;justify-content:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #cbdcd5;border-radius:50%;inset:24px}.orbit:after{inset:49px;border-style:dashed}.orbit-center{text-align:center;position:relative;z-index:1}.orbit-center strong{display:block;font-size:55px;letter-spacing:-.07em;color:var(--accent);line-height:1}.orbit-center span{display:block;margin-top:12px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.float-card{position:absolute;z-index:2;background:white;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:13px 16px;font-size:12px;color:var(--muted)}.float-card strong{display:block;font-size:14px;color:var(--ink)}.float-card.one{top:18px;right:-4px}.float-card.two{bottom:20px;left:-6px}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.trust-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.company-pills{display:flex;gap:10px;flex-wrap:wrap}.company-pills span{padding:8px 13px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:12px;font-weight:700}
+section.content{padding:90px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.section-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--accent)}h2{font-size:clamp(30px,4vw,45px);letter-spacing:-.05em;line-height:1.12;margin:10px 0 0}.section-head p{max-width:430px;color:var(--muted);font-size:14px;margin:0}.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project{display:flex;flex-direction:column;min-height:380px;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(22,35,45,.025);transition:transform .2s,box-shadow .2s,border-color .2s}.project:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#bfd2ca}.project-top{padding:23px 23px 19px;background:linear-gradient(135deg,#eef4f1,#f8faf9);border-bottom:1px solid var(--line);min-height:138px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.project-num{font-size:11px;letter-spacing:.12em;color:var(--accent);font-weight:800}.project-mark{width:48px;height:48px;border:1px solid #d2e0d9;background:#fff;border-radius:14px;display:grid;place-items:center;color:var(--accent);font-weight:850;font-size:17px}.project-body{padding:23px;display:flex;flex-direction:column;flex:1}.project h3{font-size:21px;line-height:1.2;letter-spacing:-.035em;margin:0 0 11px}.project p{font-size:13px;color:var(--muted);margin:0 0 20px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:24px}.tags span{font-size:10px;color:#4e625b;background:#edf4f0;border-radius:999px;padding:6px 9px}.project-link{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid var(--line);font-size:12px;font-weight:800;color:var(--accent);text-decoration:none}.project-link span{font-size:20px;transition:transform .2s}.project-link:hover span{transform:translateX(4px)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.about-note{background:var(--accent);color:white;border-radius:20px;padding:28px}.about-note .big{font-size:42px;font-weight:800;letter-spacing:-.06em;line-height:1.1}.about-note p{color:#e1eee8;font-size:13px}.about-copy p{color:#596575;font-size:15px;margin-top:0}.capabilities{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}.capability{border:1px solid var(--line);background:white;border-radius:12px;padding:16px}.capability strong{display:block;font-size:13px;margin-bottom:5px}.capability span{font-size:12px;color:var(--muted)}
+.contact{background:#eaf1ed;border:1px solid #dce7e1;border-radius:22px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font-size:clamp(28px,3.6vw,40px)}.contact p{color:#59675f;font-size:14px;max-width:550px}.contact a{white-space:nowrap}
+footer{padding:28px 0 36px;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:24px;padding:66px 0}.hero-side{min-height:260px}.projects{grid-template-columns:1fr}.project{min-height:unset}.section-head{align-items:flex-start;flex-direction:column}.about-grid{grid-template-columns:1fr;gap:24px}.trust-inner{align-items:flex-start;flex-direction:column}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}nav{height:62px}.navlinks{gap:13px}.navlinks a{font-size:11px}.navlinks a:nth-child(2){display:none}.brand{font-size:17px}.hero{padding:54px 0}.hero-side{min-height:230px}.orbit{width:230px}.orbit-center strong{font-size:43px}.float-card.one{right:-2px;top:0}.float-card.two{left:-2px;bottom:0}.float-card{padding:10px 12px}.content{padding:64px 0!important}.capabilities{grid-template-columns:1fr}.contact{padding:25px}}
 </style>
 </head>
 <body>
-<nav>
-<a href="index.html">Maruti Suzuki</a><a href="ITC_Digital_Twin.html">ITC</a><a href="Hummingbird_Scientific.html">Hummingbird Scientific</a>
-</nav>
-<main id="top">
-
-<section><div class="panel">
-<span class="eyebrow">Maruti Suzuki · WICS Case Study</span>
-<h1>From weld data to real-time production control.</h1>
-<p class="lead">Shaped and implemented a Weld Information Collection System to improve weld traceability, in-house QC control and real-time production response on a high-volume automotive production line.</p>
-<div class="flow"><span>30-day production-line implementation</span><span>140 robots connected</span><span>Product Management + Project Leadership</span></div>
-<div class="grid">
-<div class="card"><div class="label">Line efficiency</div><div class="metric">86% → 97%</div><p>Improved line efficiency</p></div>
-<div class="card"><div class="label">Market complaint backtracking</div><div class="metric">45 min → 1:45 min</div><p>Reduced time to backtrack weld-related market complaints</p></div>
-<div class="card"><div class="label">Payback period</div><div class="metric">~2.5 Months</div><p>Estimated investment payback</p></div>
+<header><nav class="wrap" aria-label="Main navigation">
+<a class="brand" href="#home">Portfolio<span>.</span></a>
+<div class="navlinks"><a href="#work">Selected work</a><a href="#about">About</a><a class="contact-link" href="#contact">Get in touch ↗</a></div>
+</nav></header>
+<main id="home">
+<div class="wrap">
+<section class="hero">
+<div>
+<div class="eyebrow">Product management · Program delivery</div>
+<h1>Turning complex problems into <em>measurable outcomes.</em></h1>
+<p class="intro">I work across product thinking, cross-functional execution and operational improvement—connecting user and business needs with structured delivery, stakeholder alignment and results that can be measured.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore selected work <span>↘</span></a><a class="btn secondary" href="#about">A little about me</a></div>
 </div>
-<div class="card" style="margin-top:16px"><div class="label">In-house QC control</div><div class="metric">100%</div><p>All Weld spots are Monitored, Controlled &amp; are Traceable 100%</p></div>
-</div></section>
-
-<section id="s1"><div class="panel">
-<div class="kicker">01 / Finding the Right Problem</div><h2>Three production problems shared one missing capability: reliable weld information.</h2>
-<p>A typical weld body contained roughly 3,000 spots. Investigation depended on manual inspection records and cross-referencing production information, making investigation and response time-consuming.</p>
-<div class="grid">
-<div class="card"><div class="label">Traceability</div><div class="metric">45 min</div><p>Average time required to backtrack a weld-related market complaint.</p></div>
-<div class="card"><div class="label">Real-time response</div><div class="metric">Time-consuming</div><p>Line efficiency monitoring existed through PCS and GOT, but detecting a fault, reaching the relevant GOT system, analysing the situation, verifying robot parameters and taking corrective action required operator/supervisor intervention.</p></div>
-<div class="card"><div class="label">Spot monitoring</div><div class="metric">~3,000</div><p>Weld spots per body made 100% manual spot checking impractical.</p></div>
+<div class="hero-side" aria-label="Portfolio focus illustration">
+<div class="orbit"><div class="orbit-center"><strong>01—03</strong><span>Selected case studies</span></div></div>
+<div class="float-card one"><strong>Product thinking</strong>From problem to solution</div>
+<div class="float-card two"><strong>Delivery focus</strong>People · Process · Outcomes</div>
 </div>
-</div></section>
-
-<section id="s2"><div class="panel">
-<div class="kicker">02 / Value Proposition Mapping</div><h2>From production pain points to a solution that could address the full job.</h2>
-<p>The Production Staff were the primary users. The solution decision connected their day-to-day jobs and pain points to the gains WICS needed to create.</p>
-<div class="grid2">
-<div class="card"><h3>Customer side · Production Staff</h3>
-<p><strong>Pain Points</strong><br>Manual traceability; fragmented data across Robots, PCS and MOS; time-consuming fault investigation; incomplete weld-spot QC.</p>
-<p><strong>Gain Points</strong><br>Faster complaint backtracking; real-time fault visibility; 100% weld-spot monitoring; faster countermeasure.</p>
-<p><strong>Jobs to be Done (JTBD)</strong><br>Monitor weld production → identify faults → investigate weld parameters → trace historical weld data → take countermeasure.</p></div>
-<div class="card"><h3>WICS value creation</h3>
-<p><strong>Pain Relievers</strong><br>Centralized weld information; automated capture of weld parameters; historical traceability; real-time fault information.</p>
-<p><strong>Gain Creators</strong><br>Faster investigation; faster countermeasure; complete weld-spot visibility; improved production response.</p>
-<p><strong>Product / Service</strong><br>Customized WICS solution integrated with the existing production environment.</p></div>
+</section>
+<div class="trust"><div class="trust-inner"><div class="trust-label">Experience across</div><div class="company-pills"><span>Maruti Suzuki</span><span>ITC</span><span>Hummingbird Scientific</span></div></div></div>
+<section class="content" id="work">
+<div class="section-head"><div><div class="section-label">Selected work / 01—03</div><h2>Three companies. Three case studies.</h2></div><p>Explore the problem, approach and outcomes behind selected work across manufacturing, digital transformation and scientific product delivery.</p></div>
+<div class="projects">
+<article class="project"><div class="project-top"><span class="project-num">CASE STUDY 01</span><div class="project-mark">MS</div></div><div class="project-body"><h3>Maruti Suzuki</h3><p>Weld Information Collection System (WICS): improving weld traceability, in-house quality control and production response on a high-volume automotive line.</p><div class="tags"><span>Product management</span><span>Program leadership</span><span>Manufacturing</span></div><a class="project-link" href="Master.html">Explore case study <span>↗</span></a></div></article>
+<article class="project"><div class="project-top"><span class="project-num">CASE STUDY 02</span><div class="project-mark">ITC</div></div><div class="project-body"><h3>ITC · Digital Twin</h3><p>Using process data and digital-twin thinking to understand biscuit variability and support more controllable production decisions.</p><div class="tags"><span>Digital transformation</span><span>Root-cause analysis</span><span>Process improvement</span></div><a class="project-link" href="ITC_Digital_Twin.html">Explore case study <span>↗</span></a></div></article>
+<article class="project"><div class="project-top"><span class="project-num">CASE STUDY 03</span><div class="project-mark">HS</div></div><div class="project-body"><h3>Hummingbird Scientific</h3><p>Company-level work across product delivery, PMO governance, executive visibility and business planning.</p><div class="tags"><span>Product delivery</span><span>PMO</span><span>Business planning</span></div><a class="project-link" href="Hummingbird_Scientific.html">Explore case study <span>↗</span></a></div></article>
 </div>
-<div class="card" style="margin-top:16px"><h3>Why WICS?</h3><p>A single information layer could address traceability, 100% weld-spot monitoring and faster production response within the one-month implementation constraint.</p></div>
-</div></section>
-
-<section id="s3"><div class="panel">
-<div class="kicker">03 / UX Strategy &amp; Design · Five Planes</div><h2>Implemented 5S framework from a UX perspective to bridge the Gap between Business Strategy &amp; Actual Visual Design</h2>
-<div class="grid2">
-<div class="card"><h3>01 · Strategy — Why?</h3><p><strong>Goal:</strong> Improve weld traceability, real-time fault response and 100% weld-spot monitoring.</p><p><strong>Method:</strong> Translate production problems into focused information and workflows that supervisors and operators could use to detect, investigate and counter faults with minimal time loss.</p></div>
-<div class="card"><h3>02 · Scope — What?</h3><p>Define what the system needed to capture, monitor and make actionable: weld parameters for every spot; robot and weld-body information; fault and downtime information; shift/date/time tracking; MOS-linked spot information; Spot-0 Status; historical traceability; and countermeasure/parameter-change tracking.</p></div>
-<div class="card"><h3>03 · Structure — How is information organised?</h3><p>Structure information so users could move from production line → sub-assembly → robot → weld body → weld spot and access corresponding parameters and fault information.</p><p>MOS integration enabled users to identify where a spot was applied, which sub-assembly it belonged to and which robot performed it.</p></div>
-<div class="card"><h3>04 · Skeleton — How does the user navigate?</h3><p>Define navigation around the investigation workflow: select line/sub-assembly → shift/date/time → robots and weld bodies → individual weld information → faults → parameters and countermeasure actions.</p><p>DAP/design review with Vendors validated the proposed structure and interactions before manufacturing.</p></div>
-<div class="card"><h3>05 · Surface — What does the user see?</h3><p>Customize the WICS interface so required production information could be presented clearly through dashboard, monitoring views, navigation hierarchy and information states defined for the Maruti use case.</p><p class="note"></p></div>
+</section>
+<section class="content" id="about">
+<div class="about-grid">
+<div><div class="section-label">How I work</div><h2>Structure for the work. Clarity for the people.</h2></div>
+<div class="about-copy"><p>My case studies reflect work at the intersection of product management, program execution and operational improvement. I focus on making complex work easier to align and deliver: clarifying the problem, translating needs into actionable plans, coordinating stakeholders and tracking progress through to outcomes.</p><p>Across different company contexts, the common thread is connecting day-to-day execution with customer, production and business priorities.</p><div class="capabilities"><div class="capability"><strong>Product & problem framing</strong><span>Needs, requirements, workflows and solution fit</span></div><div class="capability"><strong>Program delivery</strong><span>Dependencies, risks, timelines and follow-through</span></div><div class="capability"><strong>Stakeholder alignment</strong><span>Clear ownership, communication and decisions</span></div><div class="capability"><strong>Operational improvement</strong><span>Root-cause thinking, process visibility and outcomes</span></div></div></div>
 </div>
-</div></section>
-
-<section id="s4"><div class="panel">
-<div class="kicker">04 / Execute</div><h2>Thirty days. A live production line. A tightly sequenced implementation.</h2>
-<div class="timeline">
-<div class="day">Days<br>1–10</div><div class="bar"><strong>Problem and feasibility analysis → Project charter → Technical specifications freezing & approval → Stakeholder communication → Negotiation → Fast-track PO approvals</strong><p>Requirements and feasibility were worked through in parallel so the project charter could establish scope, goals, success/exit criteria, stakeholders, budget, schedule and strategy. Stakeholder communication through Power/Interest Grid &amp; Daily Standups so there is a tailored communication &amp; Continuous visibility &amp; 2 way communication into the projects progress. Fast track PO’s through Concurrent approvals.</p></div>
-<div class="day">Days<br>11–20</div><div class="bar"><strong>DAP + Equipment manufacturing supervision + Site readiness</strong><p>Built a wireframe prototype to visualize the proposed production workflow, gather production-team feedback and translate validated requirements into vendor design inputs before the DAP.</p><p>While customized equipment was manufactured and shipped from Japan, I supervised site readiness with Civil/Utilities, covering safety requirements, permissions, updated layouts, feasibility and validation of planned changes against actual running-shop conditions.</p><p>DAP/design mockup reviews with Vendors were used to validate customization before manufacturing.</p></div>
-<div class="day">Days<br>21–30</div><div class="bar"><strong>Installation, Trials, PPVT (Peak Production Volume Trial), Stabilization & Commissioning the line</strong><p>Component inspection → WICS installation and robot connectivity → Safety Checks → Weld-body trials → Fault identification → Countermeasure → Validate → Improve.</p><p>The focus was not simply getting the system live, but progressively improving reliability through trial feedback and production-team inputs.</p></div>
+</section>
+<section class="content" id="contact">
+<div class="contact"><div><div class="section-label">Next conversation</div><h2>Let’s talk about solving meaningful problems.</h2><p>Interested in product management, program delivery or operational improvement opportunities? Connect with me through your preferred professional channel.</p></div><a class="btn primary" href="mailto:">Get in touch ↗</a></div>
+</section>
+<footer><div class="footer-inner"><span>Portfolio · Product Management &amp; Program Delivery</span><span>Selected work: Maruti Suzuki · ITC · Hummingbird Scientific</span></div></footer>
 </div>
-</div></section>
-
-<section id="s5"><div class="panel">
-<div class="kicker">05 / Insight-Driven RCA</div>
-<h2>When WICS exposed the symptom, I drove the investigation to the root cause.</h2>
-<div class="flow"><span>Production issue</span><span>WICS detection &amp; traceability</span><span>Management escalation + approval</span><span>PFMEA-based prioritization</span><span>QA</span><span>Root cause</span><span>15-day action plan</span><span>Closure</span></div>
-<p><strong>Symptom:</strong> A recurring weld-related production issue was flagged by WICS. The underlying cause was not yet known and required investigation.</p>
-<div class="grid2">
-<div class="card"><h3>Root-cause example</h3>
-<p><strong>WICS exposed a recurring high-resistance fault.</strong></p>
-<p>Investigation traced the issue to a <strong>datum-hole mismatch between two parts</strong>, creating a gap during fitment and affecting welding conditions.</p>
-<p>Before WICS, the robot fault was not being diagnosed effectively because welding parameters were not being finalized robustly against actual part variation. WICS made the fault visible and traceable; the subsequent QA/vendor investigation identified the underlying part-fitment issue.</p></div>
-<div class="card"><h3>What I owned</h3>
-<p><strong>Escalated</strong> the production and efficiency impact to management and secured approval to act.</p>
-<p><strong>Prioritized</strong> issues using criticality, frequency and risk through a PFMEA-based approach.</p>
-<p><strong>Mobilized</strong> In-house QA and Vendor QA to identify and address root causes.</p>
-<p><strong>Defined</strong> a 15-day corrective-action plan with roles, responsibilities and timelines.</p>
-<p><strong>Drove execution to closure</strong> while protecting running-body accuracy.</p></div>
-</div>
-
-</div></section>
-
-<section id="s7"><div class="panel">
-<div class="kicker">06 / Ownership & Takeaway</div>
-<h2>Product Management + Project Leadership</h2>
-<div class="grid2">
-<div class="card"><h3>Product Management</h3><p>Problem definition · Alternative evaluation · JTBD · Requirements & specifications · Wireframing · Solution customization · Information architecture & workflow · DAP/design validation · Production feedback & iteration</p></div>
-<div class="card"><h3>Project Leadership</h3><p>30-day execution constraint · Parallel workstreams · Dependency management · Supplier & stakeholder coordination · Production risk management · In-house QA / Vendor QA collaboration · Installation · Trials · PPVT · Stabilization & commissioning</p></div>
-</div>
-
-<p class="lead" style="margin-top:22px">This case study demonstrates my product thinking and project-leadership capabilities across problem discovery, solution evaluation, requirements definition, UI/UX customization, cross-functional implementation, iterative validation and measurable operational impact.</p>
-<div class="flow"><span>Problem discovery</span><span>Solution evaluation</span><span>Requirements</span><span>UI/UX customization</span><span>Execution</span><span>Validation</span><span>Operational impact</span><span>Stakeholder Management</span><span>Critical Path Management</span><span>Value Stream Analysis</span></div>
-</div></section>
-
-<div class="footer">WICS Case Study · Maruti Suzuki · Product Management + Project Leadership</div>
 </main>
 </body>
 </html>
