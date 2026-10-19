@@ -14,64 +14,15 @@ section.section{padding:84px 0}.section-head{display:flex;align-items:end;justif
 .what-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}.statement{background:var(--lime);border-radius:18px;padding:26px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}.statement strong{font-size:34px;line-height:1.08;letter-spacing:-.06em;max-width:280px}.statement span{font-size:11px;letter-spacing:.12em;text-transform:uppercase}.about p{font-size:14px;color:#5d6963;margin-top:0}.services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}.service{border:1px solid var(--line);border-radius:10px;background:#fff;padding:15px}.service strong{font-size:12px;display:block;margin-bottom:4px}.service span{font-size:11px;color:var(--muted)}.cta{background:#e9eee8;border:1px solid #dce4dc;border-radius:18px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:24px}.cta p{font-size:13px;color:var(--muted);max-width:580px}.cta h2{max-width:600px}footer{padding:26px 0 34px;font-size:11px;color:var(--muted)}.foot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 @media(max-width:800px){.hero{grid-template-columns:1fr;gap:25px;padding:62px 0}.visual{min-height:270px}.grid{grid-template-columns:1fr}.case-art{height:125px}.section-head{align-items:flex-start;flex-direction:column}.what-grid{grid-template-columns:1fr;gap:22px}.statement{min-height:180px}.cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:540px){.wrap{width:calc(100% - 28px)}nav{height:62px}.navlinks{gap:13px}.navlinks a{font-size:11px}.navlinks{gap:9px}.navlinks a{font-size:10px}.navlinks a:nth-child(2){display:inline}.brand{font-size:17px}.hero{padding:48px 0}.visual{min-height:235px}.visual-card{width:245px}.float.a{right:-2px}.float.b{left:-2px}.section{padding:62px 0!important}.services{grid-template-columns:1fr}.cta{padding:24px}}
-.venn-section{padding-top:52px!important}.venn-wrap{width:min(820px,100%);margin:0 auto}.venn{display:block;width:100%;height:auto}.venn-mobile{display:none}
-@media(max-width:600px){.venn{display:none}.venn-mobile{display:grid;gap:10px}.venn-mobile>div{padding:13px 15px;border:1px solid var(--line);border-radius:9px;background:#fff;display:grid;gap:3px}.venn-mobile strong{font-size:13px}.venn-mobile span,.venn-mobile p{font-size:12px;color:var(--muted);margin:0}.venn-mobile p{padding:12px;background:#245a49;color:#fff;border-radius:9px}.venn-mobile p strong{color:#fff}}</style>
+</style>
 </head>
 <body>
 <header><nav class="wrap"><a class="brand" href="#home">Vamsi Kanakam<span>.</span></a><div class="navlinks"><a href="#work">Case studies</a><a href="#about">About</a><a href="Vamsi_PM_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a><a class="pill" href="#contact">Connect</a></div></nav></header>
 <main id="home"><div class="wrap">
 <section class="hero"><div><div class="kicker">Program management · PMO leadership</div><h1>Turning complexity into <em>measurable execution.</em></h1><p class="lead">I turn complex business priorities into clear plans, aligned teams and measurable delivery outcomes across product, manufacturing, digital transformation and PMO environments.</p><div class="actions"><a class="btn primary" href="#work">Explore case studies <span>↘</span></a><a class="btn light" href="#about">What I do</a></div></div>
 <div class="visual" aria-label="Portfolio overview"><div class="visual-card"><div class="visual-top"><span>Selected work</span><span>Portfolio / 2026</span></div><div><div class="visual-number">03</div><div class="visual-caption">Company case studies. One focus: turning plans into measurable results.</div></div><div class="visual-bottom"><span>Product · Delivery · Operations</span></div></div></div></section>
-<section class="section venn-section" id="work">
-<div class="section-head"><div><div class="section-label">Shared strengths · distinct experience</div><h2>Work built around real problems.</h2></div><p>A common foundation across all roles, with company-specific focus areas.</p></div>
-<div class="venn-wrap">
-<svg class="venn" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="venn-title venn-desc">
-<title id="venn-title">Work built around real problems — shared capabilities across three companies</title>
-<desc id="venn-desc">Three equal translucent circles overlap. Their true shared intersection is dark green and contains Project and Program Management.</desc>
-<circle cx="330" cy="185" r="165" fill="#dfeade" fill-opacity=".78" stroke="#cbd9cc" stroke-width="1.6"/>
-<circle cx="570" cy="185" r="165" fill="#eeecdf" fill-opacity=".82" stroke="#dedac7" stroke-width="1.6"/>
-<circle cx="450" cy="310" r="165" fill="#e2edf2" fill-opacity=".82" stroke="#cfdee5" stroke-width="1.6"/>
-<!-- The center is the shared triple-overlap region, not a separately positioned badge. -->
-<defs>
-  <clipPath id="venn-intersection-clip">
-    <circle cx="330" cy="185" r="165"/>
-    <circle cx="570" cy="185" r="165"/>
-    <circle cx="450" cy="310" r="165"/>
-  </clipPath>
-</defs>
-<circle cx="330" cy="185" r="165" fill="#245a49" clip-path="url(#venn-intersection-clip)"/>
-<g fill="#17231f" font-family="Inter,system-ui,sans-serif" text-anchor="start">
-  <text x="240" y="113" font-size="19" font-weight="750">Maruti Suzuki</text>
-  <text x="240" y="149" font-size="14">Industry 4.0</text>
-  <text x="240" y="174" font-size="14">Digital Transformation</text>
-  <text x="240" y="199" font-size="14">New Product</text>
-  <text x="240" y="218" font-size="14">Development (NPD)</text>
-  <text x="570" y="113" font-size="19" font-weight="750">ITC</text>
-  <text x="570" y="149" font-size="14">Industry 4.0</text>
-  <text x="570" y="174" font-size="14">Digital Transformation</text>
-  <text x="570" y="199" font-size="14">New Product</text>
-  <text x="570" y="218" font-size="14">Development (NPD)</text>
-  <text x="450" y="365" font-size="19" font-weight="750" text-anchor="middle">Hummingbird Scientific</text>
-</g>
-<g fill="#17231f" font-family="Inter,system-ui,sans-serif" text-anchor="start" font-size="14">
-  <text x="375" y="395">Digital Transformation</text>
-  <text x="375" y="419">PMO</text>
-  <text x="375" y="443">Chief of Staff Operations</text>
-</g>
-<g fill="#fff" font-family="Inter,system-ui,sans-serif" font-weight="750" text-anchor="middle" font-size="14.5">
-  <text x="450" y="219">Project &amp;</text>
-  <text x="450" y="239">Program</text>
-  <text x="450" y="259">Management</text>
-</g>
-</svg>
-<div class="venn-mobile" aria-label="Capabilities by company">
-<div><strong>Maruti Suzuki</strong><span>Industry 4.0 · Digital Transformation · New Product Development (NPD)</span></div>
-<div><strong>ITC</strong><span>Industry 4.0 · Digital Transformation · New Product Development (NPD)</span></div>
-<div><strong>Hummingbird Scientific</strong><span>Digital Transformation · PMO · Chief of Staff Operations</span></div>
-<p><strong>Shared across all three:</strong> Project &amp; Program Management</p>
-</div>
-</div>
-</section><div class="section-head"><div><div class="section-label">Featured case studies / 01—03</div><h2>Work built around real problems.</h2></div><p>Explore the context, approach and delivery focus across manufacturing systems, digital transformation and scientific product operations.</p></div>
+<section class="section" id="work">
+<div class="section-head"><div><div class="section-label">Featured case studies / 01—03</div><h2>Work built around real problems.</h2></div><p>Explore the context, approach and delivery focus across manufacturing systems, digital transformation and scientific product operations.</p></div>
 <div class="grid">
 <article class="case"><div class="case-art"><div class="case-meta"><span>CASE STUDY 01</span><span>MANUFACTURING</span></div><div class="case-icon">WICS</div></div><div class="case-body"><h3>Maruti Suzuki — WICS</h3><p>Manufacturing intelligence and production efficiency through weld traceability, real-time quality visibility and production response.</p><div class="tags"><span>Product management</span><span>Quality systems</span><span>Manufacturing</span></div><a class="case-link" href="Master.html">Read case study <span>↗</span></a></div></article>
 <article class="case"><div class="case-art"><div class="case-meta"><span>CASE STUDY 02</span><span>DIGITAL TWIN</span></div><div class="case-icon">WHS Digital Twin</div></div><div class="case-body"><h3>ITC — Digital Twin</h3><p>Process optimization and product quality by connecting process data, model calibration and finished-good quality targets.</p><div class="tags"><span>Digital transformation</span><span>Process improvement</span><span>Analytics</span></div><a class="case-link" href="ITC_Digital_Twin.html">Read case study <span>↗</span></a></div></article>
