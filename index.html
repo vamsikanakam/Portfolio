@@ -27,29 +27,36 @@ section.section{padding:84px 0}.section-head{display:flex;align-items:end;justif
 <div class="venn-wrap">
 <svg class="venn" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="venn-title venn-desc">
 <title id="venn-title">Shared Project and Program Management across three companies</title>
-<desc id="venn-desc">Maruti Suzuki and ITC each include Industry 4.0, Digital Transformation and New Product Development. Hummingbird Scientific includes Digital Transformation, PMO and Chief of Staff Operations. Project and Program Management is the shared capability.</desc>
+<desc id="venn-desc">Three equal overlapping circles. Maruti Suzuki and ITC capability lists sit inside the upper circles; Hummingbird Scientific sits in the lower circle. Project and Program Management occupies the actual shared intersection.</desc>
+<defs>
+  <clipPath id="venn-maruti"><circle cx="330" cy="185" r="165"/></clipPath>
+  <clipPath id="venn-itc"><circle cx="570" cy="185" r="165"/></clipPath>
+  <clipPath id="venn-hummingbird"><circle cx="450" cy="310" r="165"/></clipPath>
+  <clipPath id="venn-shared-a"><g clip-path="url(#venn-maruti)"><circle cx="570" cy="185" r="165"/></g></clipPath>
+  <clipPath id="venn-shared-all"><g clip-path="url(#venn-shared-a)"><circle cx="450" cy="310" r="165"/></g></clipPath>
+</defs>
 <circle cx="330" cy="185" r="165" fill="#dfeade" fill-opacity=".78" stroke="#cbd9cc" stroke-width="1.4"/>
 <circle cx="570" cy="185" r="165" fill="#eeecdf" fill-opacity=".82" stroke="#dedac7" stroke-width="1.4"/>
 <circle cx="450" cy="310" r="165" fill="#e2edf2" fill-opacity=".82" stroke="#cfdee5" stroke-width="1.4"/>
+<rect x="0" y="0" width="900" height="500" fill="#245a49" clip-path="url(#venn-shared-all)"/>
 <g fill="#17231f" font-family="Inter,system-ui,sans-serif" text-anchor="start">
-<text x="125" y="113" font-size="19" font-weight="750">Maruti Suzuki</text>
-<text x="125" y="149" font-size="14">Industry 4.0</text>
-<text x="125" y="174" font-size="14">Digital Transformation</text>
-<text x="125" y="199" font-size="14">New Product</text><text x="125" y="218" font-size="14">Development (NPD)</text>
-<text x="605" y="113" font-size="19" font-weight="750">ITC</text>
-<text x="605" y="149" font-size="14">Industry 4.0</text>
-<text x="605" y="174" font-size="14">Digital Transformation</text>
-<text x="605" y="199" font-size="14">New Product</text><text x="605" y="218" font-size="14">Development (NPD)</text>
-<text x="450" y="365" font-size="19" font-weight="750" text-anchor="middle">Hummingbird Scientific</text>
+  <text x="240" y="113" font-size="19" font-weight="750">Maruti Suzuki</text>
+  <text x="240" y="149" font-size="14">Industry 4.0</text>
+  <text x="240" y="174" font-size="14">Digital Transformation</text>
+  <text x="240" y="199" font-size="14">New Product</text><text x="240" y="218" font-size="14">Development (NPD)</text>
+  <text x="570" y="113" font-size="19" font-weight="750">ITC</text>
+  <text x="570" y="149" font-size="14">Industry 4.0</text>
+  <text x="570" y="174" font-size="14">Digital Transformation</text>
+  <text x="570" y="199" font-size="14">New Product</text><text x="570" y="218" font-size="14">Development (NPD)</text>
+  <text x="450" y="365" font-size="19" font-weight="750" text-anchor="middle">Hummingbird Scientific</text>
 </g>
 <g fill="#17231f" font-family="Inter,system-ui,sans-serif" text-anchor="start" font-size="14">
-<text x="365" y="395">Digital Transformation</text>
-<text x="365" y="419">PMO</text>
-<text x="365" y="443">Chief of Staff Operations</text>
+  <text x="375" y="395">Digital Transformation</text>
+  <text x="375" y="419">PMO</text>
+  <text x="375" y="443">Chief of Staff Operations</text>
 </g>
-<circle cx="450" cy="235" r="57" fill="#245a49" stroke="#f8f8f5" stroke-width="3"/>
 <g fill="#fff" font-family="Inter,system-ui,sans-serif" font-weight="750" text-anchor="middle" font-size="14.5">
-<text x="450" y="219">Project &amp;</text><text x="450" y="239">Program</text><text x="450" y="259">Management</text>
+  <text x="450" y="219">Project &amp;</text><text x="450" y="239">Program</text><text x="450" y="259">Management</text>
 </g>
 </svg>
 <div class="venn-mobile" aria-label="Capabilities by company">
