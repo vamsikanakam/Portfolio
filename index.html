@@ -32,7 +32,14 @@ section.section{padding:84px 0}.section-head{display:flex;align-items:end;justif
 <circle cx="570" cy="185" r="165" fill="#eeecdf" fill-opacity=".82" stroke="#dedac7" stroke-width="1.6"/>
 <circle cx="450" cy="310" r="165" fill="#e2edf2" fill-opacity=".82" stroke="#cfdee5" stroke-width="1.6"/>
 <!-- The center is the shared triple-overlap region, not a separately positioned badge. -->
-<path d="M450 145 C469 145 489 158 503 180 C520 213 487 265 450 298 C413 265 380 213 397 180 C411 158 431 145 450 145 Z" fill="#245a49" stroke="#f8f8f5" stroke-width="2.5" stroke-linejoin="round"/>
+<defs>
+  <clipPath id="venn-intersection-clip">
+    <circle cx="330" cy="185" r="165"/>
+    <circle cx="570" cy="185" r="165"/>
+    <circle cx="450" cy="310" r="165"/>
+  </clipPath>
+</defs>
+<circle cx="330" cy="185" r="165" fill="#245a49" clip-path="url(#venn-intersection-clip)"/>
 <g fill="#17231f" font-family="Inter,system-ui,sans-serif" text-anchor="start">
   <text x="240" y="113" font-size="19" font-weight="750">Maruti Suzuki</text>
   <text x="240" y="149" font-size="14">Industry 4.0</text>
